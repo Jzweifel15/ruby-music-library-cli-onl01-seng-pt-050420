@@ -31,9 +31,9 @@ class MusicLibraryController
         when "play song"
           play_song
         when "list artist"
-          list_artist
+          list_songs_by_artist
         when "list genre"
-          list_genre
+          list_songs_by_genre
         else
           puts "Unknown command.  Please try again, or 'exit' to quit."
         end
