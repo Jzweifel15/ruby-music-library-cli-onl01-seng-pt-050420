@@ -63,9 +63,7 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
       input = gets.strip
       if Artist.all.name.include?(input)
-        puts
-      else
-        puts "Artist not found in library. Please try another artist."
+        puts 
       end
     end
     
