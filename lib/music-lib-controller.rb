@@ -54,7 +54,9 @@ class MusicLibraryController
     end
     
     def list_genres
-      Genre.all.each {|genre| puts "#{genre.name}"}
+      sorted_genres = Genre.all.osrt_by {|genre| genre.name}
+      sorted_genres.each {|genre|
+        puts "#{sorted_genres.index(genre) + 1}. #{genre.name}"}
     end
     
     def list_songs_by_artist
